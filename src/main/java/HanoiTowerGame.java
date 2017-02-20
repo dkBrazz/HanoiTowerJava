@@ -15,7 +15,7 @@ public class HanoiTowerGame {
         }
     }
 
-    static void doMove(Tower tower, int diskCount, RodPosition src, RodPosition dst, RodPosition tmp) throws RodException {
+    private static void doMove(Tower tower, int diskCount, RodPosition src, RodPosition dst, RodPosition tmp) throws RodException {
         if(diskCount > 1)
             doMove(tower, diskCount-1, src, tmp, tmp);
         tower.move(src, dst);

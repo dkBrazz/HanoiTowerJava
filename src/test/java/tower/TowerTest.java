@@ -13,7 +13,6 @@ public class TowerTest {
     private Rod leftRod;
     private Rod midRod;
     private Rod rightRod;
-    private RodFactory rodFactory;
 
     @Before
     public void setup() {
@@ -21,7 +20,7 @@ public class TowerTest {
         midRod = mock(Rod.class);
         rightRod = mock(Rod.class);
 
-        rodFactory = mock(RodFactory.class);
+        RodFactory rodFactory = mock(RodFactory.class);
         when(rodFactory.createRod())
                 .thenReturn(leftRod)
                 .thenReturn(midRod)

@@ -1,4 +1,5 @@
-import mamorydrivenstuff.MemoryRod;
+package mamorydrivenstuff;
+
 import org.junit.Before;
 import org.junit.Test;
 import tower.RodException;
